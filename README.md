@@ -55,7 +55,8 @@ hidden1_size, hidden2_size = 128, 64
 
 This defines a neural networking with the following structure:
 
-![alt text](../Hand%20Writing%20Recognition/Screen%20Shot%202024-02-09%20at%209.59.34%20PM.png)
+<img width="572" alt="NetworkStructure" src="https://github.com/willk0814/numberRecognition/assets/36479286/20c6692b-a4ee-47d9-861c-789a0bb07651">
+
 <!-- 
 ### Activation Function
 Each node of the neural network needs its an activation function and all nodes in each layer will have the same activation function.
