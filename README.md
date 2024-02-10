@@ -15,13 +15,13 @@ Languages: `python`, Libraries: `jupyter, numpy, struct, os`
 
 I am going to assume that you have python3 and pip3 configured on your machine, if not I would recommend following the guide [here]().  Once you have them installed you can go ahead and open a terminal to install your dependencies with the following command:
 
-``` python
+```python
 pip3 install jupyter numpy
 ```
 
 Once you have jupyter installed, from the directory that is housing your project run the following command to open the project in the jupyter notebook editor:
 
-``` pythonn
+```pythonn
 jupyter notebook
 ```
 
@@ -41,15 +41,27 @@ def read_gzip_file(filename):
       return np.frombuffer(f.read(), dtype=np.uint8).reshape(shape)
 ```
 
----
-### A Hard-Coded Neural Network?
+## A Hard-Coded Neural Network?
 You might have noticed above that I did not important anything to construct the neural network with (tensorflow, keras, pytorch, etc...).  For this project I have hard-coded the structure of the neural network, the activation functions, as well as the feed-forward and back-propagation methods.  Let's take a look at what each of these process looked like and how 
 
-#### Network Architecture
-The architecture of a neural network is fascinating and you don't really have the chance to see it when you are using libraries that handle most of the construction for you.
+### Network Architecture
+The architecture of a neural network is fascinating and you don't really have the chance to see it when you are using libraries that handle most of the construction for you.  We define our architecture with the following:
 
-#### Activation Function
 
-#### Feed-Forward
+```python
+input_size, output_size = 784, 10
+hidden1_size, hidden2_size = 128, 64
+```
 
-#### Back-Propagation
+This defines a neural networking with the following structure:
+
+![alt text](../Hand%20Writing%20Recognition/Screen%20Shot%202024-02-09%20at%209.59.34%20PM.png)
+<!-- 
+### Activation Function
+Each node of the neural network needs its an activation function and all nodes in each layer will have the same activation function.
+
+### Feed-Forward
+
+### Back-Propagation
+
+### Training with Mini-Batch Stochastic Gradient Descent -->
